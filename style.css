@@ -1,0 +1,29 @@
+html {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+.chessboard {
+	background-color: #d3f4ff;
+	border: 2px solid #db1415;
+	padding: 20px;
+	width: min(100vh, 100vw);
+	height: min(100vh, 100vw);
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+.chessboard > div {
+	border: 1px solid black;
+	background-color: white;
+}
+
+.even-black:nth-child(even) {
+	background-color: black;
+}
+.odd-black:nth-child(odd) {
+	background-color: black;
+}
